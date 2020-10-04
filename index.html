@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shoes Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="offen">
+        <div class="back"></div>
+        <div class="logo"><img src="nike.png" alt=""></div>
+        <div class="circle"></div>
+        <div class="smallcircle">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
+        <div class="shoes">
+            <div class="shoe1">
+                <img src="shoe1.png" alt="" title="Nike Shoe">
+            </div>
+        </div>
+        <div class="content">
+            <h3> Nike Sneaker</h3>
+            <h4>$999</h4>
+            <p>Just Do it, The Ultimate quick fix.<br>The sneaker makes the man.</p>
+            <button>Shop now</button>
+        </div>
+        <div class="shoe2">
+            <img src="shoe2.png" title="Nike shoe">
+        </div>
+        <div class="shoe3">
+
+            <img src="shoe3.png" title="Nike shoe">
+        </div>
+        <div class="footer"><p>&copy; 2020, @infoskillx</p></div>
+    </section>
+    <div class="vl"></div>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation"  onclick="toggleMenu();">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Shop now</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+     function toggleMenu(){
+        var menuToggle = document.querySelector('.menuToggle');
+        var navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+     
+
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+section .back{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30%;
+    background-color: #000;
+}
+section .logo img{
+    position: absolute;
+    top: 4px;
+    height: 103px;
+    width: 103px;
+    left: 43px;
+    filter: invert(100%);
+}
+section .circle{
+    position: absolute;
+    top: 181px;
+    height: 258px;
+    width: 258px;
+    left: 276px;
+    border-radius: 50%;
+    background-color: #f16430;
+    
+}
+section .smallcircle .circle1{
+    position: absolute;
+    top: 120px;
+    height: 20px;
+    width: 20px;
+    left: 476px;
+    border-radius: 50%;
+    background-color: #000;
+}
+section .smallcircle .circle2{
+    position: absolute;
+    bottom: 140px;
+    height: 20px;
+    width: 20px;
+    left: 476px;
+    border-radius: 50%;
+    background-color: #000;
+}
+section .smallcircle .circle3{
+    position: absolute;
+    top: 257px;
+    height: 20px;
+    width: 20px;
+    left: 152px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+section .shoes .shoe1 img{
+    position: absolute;
+    top: 10px;
+    left: 123px;
+    width: 600px;
+    transition: .5s;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+section .content{
+    position: absolute;
+    top: 150px;
+    right: 350px;
+}
+section .content h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    
+    letter-spacing: 2px;
+}
+section .content h4{
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+section .content p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 0px;
+}
+section .content button{
+    background-color: #f07447;
+    border: none;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+section .content button:hover{
+   background-color: #fff;
+   color: #f07447;
+   border: 2px solid #f07447;
+}
+section .shoe2 img{
+    position: absolute;
+    bottom: 180px;
+    right: 510px;
+    width: 110px;
+    height: 50px;
+    cursor:pointer;
+    transition: .5s;
+}
+section .shoe2 img:hover{
+   transform: translateY(10px);
+}
+
+section .shoe3 img {
+    position: absolute;
+    bottom: 180px;
+    right: 380px;
+    width: 110px;
+    height: 50px;
+    cursor:pointer;
+    transition: .5s;
+}
+section .shoe3 img:hover{
+    transform: translateY(10px);
+}
+section .footer{
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    color: #fff;
+    opacity: 0.8;
+
+}
+.vl {
+    position: absolute;
+    top: 0px;
+    right: 78px;
+    height: 100vh;
+    
+    border: 1px solid black;
+    opacity: 0.2;
+  }
+/* menu bar */
+.menuToggle{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background: #000 url(menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: .2s;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    left: -80px;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.navigation.active{
+    width: 100%;
+}
+.navigation ul{
+    position: relative;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+.navigation ul li a{
+    font-size: 2.5em;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 2px;
+    
+}
+.navigation ul li a:hover{
+    color: #f07447;
+}
+.menuToggle.active{
+   
+    width: 80px;
+    height: 80px;
+    background: #000 url(close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
